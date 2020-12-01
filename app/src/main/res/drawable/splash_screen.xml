@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <color android:color="@color/splashcolor"/>
+        <shape android:shape="ring">
+            <stroke android:width="3dp" android:color="@color/black" />
+            <solid android:color="@color/splashcolor" />
+        </shape>
+    </item>
+
+    <item
+        android:width="200dp"
+        android:height="200dp"
+        android:gravity="center">
+
+        <bitmap
+            android:src="@drawable/tech_service"
+            android:gravity="fill"
+            android:mipMap="true"/>
+    </item>
+
+    <!--<item  titulo abajo
+        android:width="100dp"
+        android:height="30dp"
+        android:gravity="bottom|center">
+
+        <bitmap
+            android:src="@drawable/tech_service"
+            android:gravity="fill"
+            android:mipMap="true"/>
+    </item>-->
+</layer-list>

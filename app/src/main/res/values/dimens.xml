@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--dimes for design 3-->
+    <dimen name="headerTextSize">22sp</dimen>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="loginCardRadius">20dp</dimen>
+    <dimen name="loginViewsMargin">20dp</dimen>
+
+    <dimen name="edittext_textsize_login">18sp</dimen>
+    <dimen name="signup_text_margin_top">10dp</dimen>
+
+    <dimen name="spacing_large">15.0dip</dimen>
+    <dimen name="spacing_medium">5.0dip</dimen>
+    <dimen name="spacing_middle">10.0dip</dimen>
+    <dimen name="spacing_mlarge">20.0dip</dimen>
+    <dimen name="spacing_mxlarge">25.0dip</dimen>
+    <dimen name="spacing_small">3.0dip</dimen>
+    <dimen name="spacing_smlarge">18.0dip</dimen>
+    <dimen name="spacing_xlarge">35.0dip</dimen>
+    <dimen name="spacing_xmedium">7.0dip</dimen>
+    <dimen name="spacing_xmlarge">40.0dip</dimen>
+    <dimen name="spacing_xsmall">2.0dip</dimen>
+    <dimen name="spacing_xxlarge">50.0dip</dimen>
+    <dimen name="spacing_xxxlarge">55.0dip</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_horizontal_margin2">8.0dip</dimen>
+    <dimen name="activity_horizontal_margin3">32.0dip</dimen>
+    <dimen name="activity_horizontal_margin4">96.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin2">8.0dip</dimen>
+    <dimen name="appbar_padding_top">8.0dip</dimen>
+    <dimen name="backdrop_height1">132.0dip</dimen>
+    <dimen name="card_padding">60.0dip</dimen>
+    <dimen name="code_padding_sides">16.0dip</dimen>
+    <dimen name="code_padding_top">16.0dip</dimen>
+
+    <dimen name="default_sides">4.0dip</dimen>
+    <dimen name="default_top">8.0dip</dimen>
+
+    <dimen name="sd_close_elevation">5.0dip</dimen>
+    <dimen name="sd_fab_mini_size">54.0dip</dimen>
+    <dimen name="sd_fab_normal_size">72.0dip</dimen>
+    <dimen name="sd_fab_side_margin">12.0dip</dimen>
+    <dimen name="sd_label_max_width">160.0dip</dimen>
+    <dimen name="sd_open_elevation">8.0dip</dimen>
+    <item name="sd_overlay_elevation" type="dimen">@dimen/sd_close_elevation</item>
+    <dimen name="shr_product_grid_spacing">32.0dip</dimen>
+    <dimen name="shr_product_grid_spacing_small">24.0dip</dimen>
+    <dimen name="slider_width">56.0dip</dimen>
+    <dimen name="social_padding_sides">8.0dip</dimen>
+    <dimen name="social_padding_top">4.0dip</dimen>
+    <dimen name="source_margin_sides">16.0dip</dimen>
+    <dimen name="source_margin_top">8.0dip</dimen>
+
+    <dimen name="widget_margin">8.0dip</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="icon_size">56dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="toolbar_icon_size">24dp</dimen>
+    <dimen name="appbar_header_height">256dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="sneek_height">615dp</dimen>
+
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="grid_item_text_size">11sp</dimen>
+    <dimen name="grid_item_image_size">90dp</dimen>
+
+
+    <dimen name="appbar_height_large">256.0dip</dimen>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:backgroundTint="@color/contentBodyColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lytDevice">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_tiny"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="16dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_height="@dimen/grid_item_image_size"
+                    android:layout_width="@dimen/grid_item_image_size"
+                    android:layout_gravity="center_horizontal"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/image_12"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/itemQrCode"/>
+
+                <TextView
+                    android:id="@+id/itemMarca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/grid_item_text_size"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackTextColor"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    tools:text="Nombre" />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/grid_item_text_size"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:scrollHorizontally="true"
+                    android:id="@+id/itemSpecy"
+                    android:gravity="center"
+                    tools:text="Descripción"
+                    android:ellipsize="end"
+                    android:maxLines="2"/>
+
+                <TextView
+                    android:id="@+id/itemCaty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/grid_item_text_size"
+                    android:textColor="@color/materialBlue"
+                    android:layout_marginBottom="8dp"
+                    tools:text="@string/Categoria" />
+
+
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:id="@+id/itemEstado"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_middle"
+                    android:background="@color/bkTextColor"
+                    android:gravity="center"
+                    android:minWidth="60.0dip"
+                    android:paddingLeft="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_xsmall"
+                    android:paddingRight="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_small"
+                    android:textSize="@dimen/grid_item_text_size"
+                    android:text="@string/Estado"
+                    android:textColor="@color/whiteTextColor" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

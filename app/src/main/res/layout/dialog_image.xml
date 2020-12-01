@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="3.0dip">
+
+    <RelativeLayout
+        android:layout_width="277dp"
+        android:layout_height="358dp">
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@raw/persona_ejemplo"
+            tools:ignore="ContentDescription" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_alignParentEnd="true"
+            android:id="@+id/edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyleBlack">
+
+            <ImageButton
+                android:id="@+id/bt_close"
+                android:layout_width="@dimen/spacing_xxlarge"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:layout_margin="@dimen/spacing_small"
+                android:background="?selectableItemBackgroundBorderless"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_close_black_24dp"
+                tools:ignore="ContentDescription" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/spacing_large"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="@dimen/spacing_medium"
+            app:cardElevation="1.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingTop="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_large"
+                android:paddingBottom="@dimen/spacing_middle">
+
+                <TextView
+                    android:id="@+id/txt_profile"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/grey_90"
+                    app:fontFamily="@font/nunito_black"
+                    tools:text="Mauris Elementum"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_middle"
+                        android:layout_height="@dimen/spacing_middle"
+                        android:layout_marginTop="1.0dip"
+                        android:tint="@color/grey_40"
+                        app:srcCompat="@drawable/ic_person_pin"
+                        tools:ignore="ContentDescription" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_medium"
+                        android:layout_height="0.0dip" />
+
+                    <TextView
+                        app:fontFamily="@font/nunito_black"
+                        android:id="@+id/txt_mode"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/grey_40"
+                        tools:text="Usuario"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

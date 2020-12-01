@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:padding="4.0dip">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:background="?selectableItemBackgroundBorderless"
+            app:civ_circle_background_color="@color/whiteCardColor"
+            android:src="@drawable/image_12"
+            android:layout_gravity="center"
+            android:layout_height="35.0dip"
+            android:layout_width="35.0dip"
+            android:id="@+id/itemQrCode" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:orientation="vertical"
+            android:paddingStart="12.0dip"
+            android:paddingTop="8.0dip"
+            android:paddingEnd="8.0dip"
+            android:paddingBottom="8.0dip">
+
+            <TextView
+                android:id="@+id/itemMarca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_medium"
+                android:maxLength="16"
+                tools:text="Marca"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/itemSerie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                tools:text="07:33 pm, 12 Dec 2018"
+                android:textAppearance="@style/WalletDescription"
+                android:textColor="@color/fontColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+            <TextView
+                android:padding="@dimen/margin_tiny"
+                android:id="@+id/itemEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:maxLength="9"
+                android:text="@string/Estado"
+                android:textAppearance="@style/WalletDescription"
+                android:textColor="@color/materialBlue"
+                android:scrollHorizontally="true"
+                android:textSize="12.0sp"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/itemVer"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/more"
+                android:textAllCaps="false"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/materialBlue"
+                android:textSize="12.0sp"
+                app:backgroundTint="@color/blueTransparent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

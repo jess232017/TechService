@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:backgroundTint="@color/contentBodyColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lytDevice">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/card_view"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="16dp"
+            app:cardElevation="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="?selectableItemBackgroundBorderless"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_width="@dimen/icon_size"
+                    tools:srcCompat="@drawable/image_12"
+                    tools:ignore="ContentDescription"
+                    android:id="@+id/itemQrCode" />
+
+                <TextView
+                    android:id="@+id/itemMarca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    app:layout_constraintBottom_toBottomOf="@+id/itemQrCode"
+                    app:layout_constraintStart_toEndOf="@+id/itemQrCode"
+                    app:layout_constraintTop_toTopOf="@+id/itemQrCode"
+                    tools:text="Twitter" />
+
+                <TextView
+                    android:id="@+id/tv_title_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="@string/Categoria"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintStart_toStartOf="@+id/itemQrCode"
+                    app:layout_constraintTop_toBottomOf="@+id/itemQrCode" />
+
+                <TextView
+                    android:id="@+id/tv_title_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modelo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_title_amount"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_0"
+                    app:layout_constraintTop_toTopOf="@+id/tv_title_amount" />
+
+                <TextView
+                    android:id="@+id/tv_title_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Estado"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_title_date"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1"
+                    app:layout_constraintTop_toTopOf="@+id/tv_title_date" />
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_tiny"
+                    android:textAppearance="@style/DetailsBold.Large"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_title_amount"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_title_amount"
+                    tools:text="20" />
+
+                <TextView
+                    android:id="@+id/itemSerie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/tv_amount"
+                    app:layout_constraintStart_toStartOf="@+id/tv_title_date"
+                    tools:text="27.08.2018" />
+
+                <TextView
+                    android:id="@+id/itemEstado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/itemSerie"
+                    app:layout_constraintStart_toStartOf="@+id/tv_title_status"
+                    tools:text="Correct" />
+
+                <ImageView
+                    android:id="@+id/img_status"
+                    android:layout_width="@dimen/toolbar_icon_size"
+                    android:layout_height="@dimen/toolbar_icon_size"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/ic_edit_profile"
+                    tools:ignore="ContentDescription" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.3553719" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.65" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

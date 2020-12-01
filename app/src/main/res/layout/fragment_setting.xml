@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:paddingTop="30dp"
+    android:background="@color/contentBodyColor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            style="@style/viewParent.headerText"
+            android:text="@string/configuraciones" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/edit_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyleBlack">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileCircleImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/darkLight"
+                    android:src="@drawable/ic_person_black"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    style="@style/viewParent.headerText"
+                    android:text="@string/nombre"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/profileCircleImageView"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end" />
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:text="@string/editar_detalles_personales"
+                    android:textSize="16sp"
+                    android:textColor="#5D5C5C"
+                    android:layout_below="@id/usernameTextView"
+                    android:layout_toEndOf="@id/profileCircleImageView"/>
+
+                <ImageView
+                    style="@style/viewParent"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+        <LinearLayout
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true">
+            <Switch
+                android:id="@+id/darkModeSwitch"
+                style="@style/settingsText"
+                android:drawableStart="@drawable/ic_dark_mode"
+                android:text="@string/dark_mode" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/perfil"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyleBlack">
+            <LinearLayout
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true">
+                <TextView
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:drawableStart="@drawable/ic_edit_profile"
+                    android:text="@string/editar_perfil" />
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/edit_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyleBlack">
+            <LinearLayout
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true">
+                <TextView
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:drawableStart="@drawable/ic_edit_password"
+                    android:text="@string/cambiar_contrase_a" />
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+        <TextView
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/notificaciones"/>
+
+        <LinearLayout
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true">
+            <Switch
+                android:id="@+id/NotifSwitch"
+                style="@style/settingsText"
+                android:checked="true"
+                android:drawableStart="@drawable/ic_notifications"
+                android:text="@string/notificaciones" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/regi_n"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyleBlack">
+            <LinearLayout
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true">
+                <TextView
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:drawableStart="@drawable/ic_languages"
+                    android:text="@string/idioma" />
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/SignOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyleBlack">
+            <LinearLayout
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:drawableStart="@drawable/ic_logout"
+                    android:text="@string/cerrar_sessi_n" />
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/version"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</ScrollView>

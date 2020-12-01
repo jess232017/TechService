@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_qr_graph"
+    app:startDestination="@id/check_Fragment">
+
+    <fragment
+        android:id="@+id/scanner_Fragment"
+        android:name="com.koopers.techservice.ui.fragments.dashboard.Scanner_Fragment"
+        android:label="fragment_scanner"
+        tools:layout="@layout/fragment_scanner" >
+        <action
+            android:id="@+id/action_scanner_Fragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/check_Fragment"
+        android:name="com.koopers.techservice.ui.fragments.dashboard.Check_Fragment"
+        android:label="fragment_check"
+        tools:layout="@layout/fragment_check" >
+        <action
+            android:id="@+id/check_to_scanner"
+            app:destination="@id/scanner_Fragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@+id/homeFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.koopers.techservice.ui.fragments.dashboard.Home_Fragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/contentBodyColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headlight_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/image_example"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/overlay_blue_30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_person"
+            app:civ_border_color="@color/darkLight"
+            app:civ_border_width="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.444" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="80dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.444">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/holderName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:fontFamily="@font/nunito_black"
+                android:scrollHorizontally="true"
+                android:textColor="@color/whiteCardColor"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                tools:text="Adam Smith" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="@dimen/spacing_large"
+                    android:layout_marginTop="1.0dip"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_person_pin"
+                    tools:ignore="ContentDescription" />
+
+                <View
+                    android:layout_width="@dimen/spacing_medium"
+                    android:layout_height="0.0dip" />
+
+                <TextView
+                    app:fontFamily="@font/nunito_black"
+                    android:id="@+id/holderMode"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    tools:text="Usuario"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/headlight_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-35dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:backgroundTint="@color/contentCardColor"
+            android:id="@+id/cardDevice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_corner5"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="12.0dip"
+                    android:paddingTop="12.0dip"
+                    android:paddingEnd="12.0dip"
+                    android:paddingBottom="10.0dip"
+                    android:text="@string/dispositivos"
+                    android:textAppearance="@style/CustomTitle1"
+                    android:textColor="@color/blackTextColor"
+                    android:textSize="15.0sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@color/lightgrey" />
+
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:layout_marginEnd="@dimen/spacing_small"
+                    android:id="@+id/swipeRefreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvEquipos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@color/lightgrey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:textAppearance="?android:textAppearanceButton"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/materialBlue"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4.0dip"
+                        app:iconTint="@color/materialBlue"
+                        android:layout_width="fill_parent"
+                        android:layout_marginEnd="4.0dip"
+                        android:background="@color/pink"
+                        app:iconGravity="textStart"
+                        app:icon="@drawable/more"
+                        android:id="@+id/btn_see"
+                        app:iconPadding="16.0dip"
+                        android:padding="0.0dip"
+                        android:text="@string/ver_todo"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:backgroundTint="@color/contentCardColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_corner5"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="12.0dip"
+                    android:paddingTop="12.0dip"
+                    android:paddingEnd="12.0dip"
+                    android:paddingBottom="10.0dip"
+                    android:text="@string/historial"
+                    android:textAppearance="@style/CustomTitle1"
+                    android:textColor="@color/blackTextColor"
+                    android:textSize="15.0sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@color/lightgrey" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:paddingBottom="5dp"
+                    android:paddingStart="1dp"
+                    android:paddingEnd="1dp"
+                    android:id="@+id/rvHistory"
+                    android:layout_height="159dp"
+                    android:layout_width="match_parent"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

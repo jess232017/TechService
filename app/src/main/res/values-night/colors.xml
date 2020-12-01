@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="Primarydrop">@android:color/black</color>
+    <color name="PrimaryDarkdrop">@android:color/black</color>
+    <color name="AccentDarkDrop">#03DAC5</color>
+    <color name="light200">#ffeeeeee</color>
+
+    <!--colors for dark mode-->
+    <color name="colorPrimary">#121212</color>
+    <color name="colorPrimaryDark">#121212</color>
+    <color name="colorAccent">#b985fa</color>
+    <color name="colorAccentDark">#3700b3</color>
+    <color name="colorAccentLight">#03dac6</color>
+    <color name="colorChipViewBackground">#d500f9</color>
+    <color name="colorCloseChip">#ffababab</color>
+    <color name="colorPrimaryLight">#ff1e88e5</color>
+
+    <color name="colorPrimaryText">#fff</color>
+    <color name="contentBodyColor">#121212</color>
+    <color name="contentTextColor">#fff</color>
+    <color name="contentCardColor">#424242</color>
+    <color name="miniTitle">#fff</color>
+
+    <!--colors for modern ui-->
+    <color name="toolbar2">#000000</color>
+    <color name="bottomnav">#ffffff</color>
+    <color name="whiteTextColor">#050309</color>
+    <color name="blackTextColor">#ffffff</color>
+    <color name="MainTextColor">#1F5BF3</color>
+    <color name="SubTextColor">#ffffff</color>
+    <color name="bottomnavcolor">#2d2d2d</color>
+    <color name="primaryTextColor">#00a5ff</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <!--colros for card-->
+    <color name="bkTextColor">@color/colorAccent</color>
+    <color name="whiteCardColor">#fff</color>
+    <color name="whiteFabColor">#b985fa</color>
+
+    <color name="bg_blue">#b985fa</color>
+
+    <color name="fontColor">#F0C9D6C9</color>
+    <color name="darkLight">#ff424242</color>
+    <color name="red">#fff44336</color>
+    <color name="lightgrey">#ffe0e0e0</color>
+    <color name="materialBlue">#b985fa</color>
+    <color name="instaPrimary">#ffffffff</color>
+    <color name="pink">#fff06292</color>
+    <color name="colorGrey">#ffc2c2c2</color>
+    <color name="cyan_300">#ff4dd0e1</color>
+    <color name="material_purple">#ffe1bee7</color>
+    <color name="purple">#ffaa00ff</color>
+    <color name="amber_trans">#32ffab00</color>
+    <color name="redTrans">#ffffcdd2</color>
+    <color name="greenTrans">#ffc8e6c9</color>
+    <color name="green1">#ff43a047</color>
+    <color name="grey_5">#fff2f2f2</color>
+    <color name="grey_40">#ff999999</color>
+    <color name="grey_60">#ff999999</color>
+    <color name="grey_80">#fff2f2f2</color>
+    <color name="grey_arsenic">#333333</color>
+    <color name="jade">#1CA767</color>
+    <color name="geryTxt">#ff858585</color>
+    <color name="zaffre">#0410a0</color>
+    <color name="splashcolor">@color/dark_arsenic</color>
+    <color name="overlay_light_20">#33ffffff</color>
+    <color name="overlay_light_60">#99ffffff</color>
+    <color name="overlay_dark_10">#1a000000</color>
+    <color name="overlay_dark_30">#4d000000</color>
+    <color name="overlay_blue_30">@color/overlay_dark_30</color>
+    <color name="anti_flash_while">@color/contentCardColor</color>
+    <color name="battleship_grey">#999999</color>
+    <color name="grey_3">#fff7f7f7</color>
+    <color name="grey_10">#ffe6e6e6</color>
+    <color name="grey_20">#ffcccccc</color>
+    <color name="grey_90">#ff263238</color>
+
+    <!--color for cardview profile-->
+    <color name="blueAccent">#ff536dfe</color>
+    <color name="indigo700">#ff303f9f</color>
+    <color name="indigo_blue">#ff1a237e</color>
+    <color name="blueTransparent">#28448aff</color>
+
+    <color name="translucentBlack">#88000000</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#fff</color>
+</resources>

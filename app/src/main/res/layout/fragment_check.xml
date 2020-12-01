@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/contentBodyColor"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/lyt_no_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="250.0dip"
+            android:layout_height="250.0dip"
+            android:id="@+id/animationView"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/purple_locked"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_permission_title"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+            android:textColor="@color/SubTextColor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="300.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:gravity="center"
+            android:text="@string/dialog_permission_message"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/SubTextColor" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_go_to_setting"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xlarge"
+            android:background="@drawable/btn_rounded_primary"
+            android:text="@string/go_to_settings"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:paddingBottom="@dimen/spacing_middle"
+            android:layout_margin="@dimen/spacing_middle"
+            app:backgroundTint="@color/whiteTextColor"
+            app:rippleColor="@android:color/white"
+            android:tint="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/ic_search"
+            android:layout_gravity="bottom|end"
+            android:id="@+id/fab_search"
+            app:elevation="4.0dip"
+            app:fabSize="normal" />
+
+    </LinearLayout>
+</RelativeLayout>

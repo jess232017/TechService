@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:background="@color/whiteTextColor"
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.koopers.techservice.utils.view.CustomTabLayout
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        app:tabSelectedTextColor="@color/blackTextColor"
+        android:background="@color/contentBodyColor"
+        app:tabIndicatorColor="@color/bg_blue"
+        app:tabIndicatorHeight="1.6999817dip"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:tabTextColor="@color/geryTxt"
+        android:id="@+id/tablayout"
+        app:tabMode="scrollable"
+        app:tabGravity="fill" />
+
+</com.google.android.material.appbar.AppBarLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sign_in_Fragment">
+
+    <fragment
+        android:id="@+id/sign_in_Fragment"
+        android:name="com.koopers.techservice.ui.fragments.session.Sign_in_Fragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/sigin_to_signup"
+            app:destination="@+id/sign_up_Fragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/sign_in_Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/login_to_dash"
+            app:destination="@id/dashboard_Activity"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@+id/dashboard_Activity"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sign_up_Fragment"
+        android:name="com.koopers.techservice.ui.fragments.session.Sign_up_Fragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <activity
+        android:id="@+id/dashboard_Activity"
+        android:name="com.koopers.techservice.ui.activities.Dashboard_Activity"
+        android:label="activity_dashboard"
+        tools:layout="@layout/activity_dashboard" />
+</navigation>

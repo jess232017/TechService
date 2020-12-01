@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	app:behavior_overlapTop="128dp"
+	android:clipChildren="false"
+	android:fillViewport="true">
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/card_main"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_margin="8.0dip"
+		android:layout_marginTop="32dp"
+		android:transitionName="@{@string/event_card_transition + eventDetailViewModel.event.id}"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<androidx.cardview.widget.CardView
+		android:layout_marginStart="@dimen/activity_horizontal_margin"
+		app:layout_constraintDimensionRatio="W,4:4"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		android:cropToPadding="true"
+		android:layout_width="100dp"
+		android:layout_height="0dp"
+		android:id="@+id/card_pic"
+		android:scaleType="fitXY"
+		app:cardElevation="5dp">
+
+		<ImageView
+			android:id="@+id/setQrCode"
+			android:transitionName="@{@string/event_image_transition + eventDetailViewModel.event.id}"
+			android:background="@android:color/darker_gray"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			tools:ignore="ContentDescription"
+			tools:src="@tools:sample/backgrounds/scenic" />
+
+	</androidx.cardview.widget.CardView>
+
+	<androidx.cardview.widget.CardView
+		app:layout_constraintRight_toRightOf="@id/card_main"
+		app:layout_constraintTop_toTopOf="parent"
+		app:cardBackgroundColor="@color/colorAccent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8.0dip"
+		android:layout_marginStart="8.0dip"
+		android:layout_width="wrap_content"
+		android:layout_marginEnd="8.0dip"
+		android:transitionGroup="true"
+		android:id="@+id/card_price"
+		app:cardElevation="5dp">
+
+		<TextView
+			android:id="@+id/setEstado"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="8.0dip"
+			android:maxLines="1"
+			android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+			android:textColor="?android:textColorPrimaryInverse"
+			tools:text="@tools:sample/lorem" />
+
+	</androidx.cardview.widget.CardView>
+
+	<TextView
+		android:id="@+id/setMarca"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_margin="7.0dip"
+		android:elevation="3dp"
+		android:maxLines="2"
+		android:text="@{eventDetailViewModel.event.name}"
+		android:textAppearance="@style/TextAppearance.AppCompat.Title"
+		android:transitionName="@{@string/event_name_transition + eventDetailViewModel.event.id}"
+		app:layout_constraintLeft_toRightOf="@id/card_pic"
+		app:layout_constraintRight_toRightOf="@id/card_main"
+		app:layout_constraintTop_toBottomOf="@id/card_price"
+		tools:text="@tools:sample/full_names" />
+
+	<TextView
+		android:id="@+id/setModelo"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_margin="7.0dip"
+		android:elevation="3dp"
+		android:maxLines="1"
+		android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+		app:layout_constraintLeft_toRightOf="@id/card_pic"
+		app:layout_constraintRight_toRightOf="@id/card_main"
+		app:layout_constraintTop_toBottomOf="@id/setMarca"
+		tools:text="@tools:sample/cities" />
+
+	<TextView
+		android:id="@+id/setCategoria"
+		android:layout_height="wrap_content"
+		android:layout_margin="7.0dip"
+		android:layout_width="0dp"
+		android:elevation="3dp"
+		android:maxLines="1"
+		app:layout_constraintLeft_toRightOf="@id/card_pic"
+		app:layout_constraintTop_toBottomOf="@id/setModelo"
+		android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+		tools:text="@tools:sample/cities" />
+
+	<androidx.viewpager.widget.ViewPager
+		app:layout_constraintBottom_toBottomOf="@id/card_main"
+		app:layout_constraintTop_toBottomOf="@id/setCategoria"
+		app:layout_constraintRight_toRightOf="@id/card_main"
+		app:layout_constraintLeft_toLeftOf="@id/card_main"
+		android:layout_marginBottom="8.0dip"
+		android:layout_marginRight="8.0dip"
+		android:layout_marginLeft="8.0dip"
+		android:transitionGroup="true"
+		android:id="@+id/view_pager"
+		android:layout_height="0dp"
+		android:layout_width="0dp"
+		android:elevation="2dp">
+
+		<com.koopers.techservice.utils.view.CustomTabLayout
+			app:tabTextAppearance="@style/MyCustomTextAppearance"
+			app:tabSelectedTextColor="@color/blackTextColor"
+			app:tabIndicatorColor="@color/bg_blue"
+			app:tabIndicatorHeight="1.6999817dip"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			app:tabTextColor="@color/geryTxt"
+			android:id="@+id/tablayout"
+			app:tabGravity="fill"
+			app:tabMode="fixed">
+
+			<com.google.android.material.tabs.TabItem
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:tabTextColor="@color/geryTxt"
+				android:textStyle="bold"
+				android:text="@string/detail_screen" />
+
+			<com.google.android.material.tabs.TabItem
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:text="@string/Componentes" />
+
+		</com.koopers.techservice.utils.view.CustomTabLayout>
+
+	</androidx.viewpager.widget.ViewPager>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tech Service</string>
+    <string name="empty1">"Estas a 404 milliones de kilometros lejos de nosotros. Por favor presione el botón de refrescar para intentar conectarse de nuevo."</string>
+    <string name="refresh_now">REFRESCAR AHORA</string>
+    <string name="bottom_basic_home">Inicio</string>
+    <string name="bottom_basic_profile">Perfil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_user_hint">Ingresar Usuario</string>
+    <string name="login_email_hint">Ingresar Correo</string>
+    <string name="login_password_hint">Ingresar Contraseña</string>
+    <string name="login_usernew_">Crear Cuenta \nNueva</string>
+    <string name="nombre">Nombre</string>
+    <string name="numero_telefonico">Numero Telefonico</string>
+    <string name="olvido_la_contrase_a">¿Olvido la contraseña?</string>
+    <string name="usar_otros_metodos">Usar otros Metodos</string>
+    <string name="tus_nprimeros_npasos_con_nnosotros">!Tus \nprimeros \npasos con \nnosotros!</string>
+
+    <string name="sigup">Registrarse</string>
+    <string name="signin">Ingresar</string>
+    <string name="signup_login_hint">¿Ya tienes una cuenta?</string>
+    <string name="login_signup_hint">¿No tienes cuenta? </string>
+    <string name="login_background">login background</string>
+    <string name="cerrar_sessi_n">Cerrar Sesión</string>
+    <string name="regi_n">Región</string>
+    <string name="idioma">Idioma</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="cambiar_contrase_a">Cambiar Contraseña</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="perfil">Perfil</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="editar_detalles_personales">Editar detalles personales</string>
+    <string name="configuraciones">Configuración</string>
+    <string name="Identificar">Identificar</string>
+    <string name="Buscar">Buscar</string>
+    <string name="buscar_o_escribir_idsu">Buscar o escribir IDSU</string>
+    <string name="bienvenido_de_nuevo">¡Bienvenido de Nuevo!, Estamos contento de tenerte aqui de vuelta.</string>
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="nombre_del_usuario">Nombre del Usuario</string>
+    <string name="privilegio">Privilegio</string>
+    <string name="please_signin">Por favor cargue una foto de usted para su perfil de usuario.</string>
+
+    <string name="dialog_permission_title">Faltan permisos</string>
+    <string name="dialog_permission_message">Se requieren ciertos permisos para usar esta caracteristica.</string>
+    <string name="go_to_settings">Ir a Configuración</string>
+    <string name="got_it">Lo Entiendo</string>
+    <string name="usuario_registrado">Se registro el usuario con exito</string>
+    <string name="escribe_tu_nombre">Escribe tu nombre</string>
+    <string name="escribe_tu_correo">Escribe tu correo</string>
+    <string name="Escribe_tu_pass">Escribe tu contraseña</string>
+    <string name="version">App ver 2.0.1</string>
+    <string name="qrcode">Scanner de Codigo QR</string>
+    <string name="search">Busqueda por  Codigo</string>
+    <string name="searchview">Buscar por marca o modelo</string>
+    <string name="greeting">Hola</string>
+    <string name="advice">¡Coloca la camara en el centro del Codigo QR para Escanear!</string>
+    <string name="more">Más</string>
+    <string name="no_connection">Sin conexión</string>
+    <string name="ver_todo">Ver Todo</string>
+    <string name="todos_los_dispositivos">Todos los Dispositivos</string>
+    <string name="yes_connection">De nuevo en línea</string>
+    <string name="historial">Historial</string>
+    <string name="alladvice">Todos los Dispositivos</string>
+    <string name="account_type">Hardware</string>
+    <string name="whoops">Whoops!</string>
+    <string name="no_connection_found">No internet connections found. Check your connection or try again</string>
+
+    <string name="shortcut_disabled_message">El acceso directo esta deshabilitado</string>
+    <string name="shortcut_long_label">Scanner de Codigo Qr</string>
+    <string name="shortcut_short_label">Qr Scanner</string>
+    <string name="Componentes">Componentes</string>
+    <string name="Fecha">Fecha</string>
+    <string name="Estado">Estado</string>
+    <string name="flash">Flash</string>
+    <string name="enfoque">Enfoque</string>
+    <string name="camara">Camara</string>
+    <string name="detail_screen">Detalles</string>
+    <string name="dispositivos">Dispositivos</string>
+    <string name="short_lorem_ipsum">short_lorem_ipsum</string>
+    <string name="descripci_n">Descripción</string>
+    <string name="editar_descripci_n">Editar Descripción</string>
+    <string name="no_hay_descripci_n">No Hay Descripción</string>
+    <string name="focus">Enfoque</string>
+    <string name="Image">Imagen</string>
+
+    <string-array name="happy_blob">
+        <item>happy_blob1</item>
+        <item>happy_blob2</item>
+        <item>happy_blob3</item>
+        <item>happy_blob4</item>
+        <item>happy_blob5</item>
+        <item>happy_blob6</item>
+        <item>happy_blob7</item>
+    </string-array>
+
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="register_complete">Termine de registrarse para completar la carga</string>
+    <string name="editar_usuario">Editar Usuario</string>
+    <string name="imagen_de_perfil">Imagen de Perfil</string>
+    <string name="editar_pass">Editar Contraseña</string>
+    <string name="passwd_user_hint">Ingresar Contraseña Actual</string>
+    <string name="new_pass_hint">Ingresar Contraseña Nueva</string>
+    <string name="change">Cambiar Contraseña</string>
+    <string name="error_pass">Contraseña No Valida</string>
+    <string name="no_valid">La contraseña nueva no es valida</string>
+    <string name="needly">Se necesita que vuelva a iniciar sesión</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="update_date_succes">Los datos se han actualizado correctamente</string>
+    <string name="nochange">Nada ha cambiado</string>
+    <string name="escribe_mail_valido">Escribe un Correo Valido</string>
+    <string name="escribe_mail_largo">Escribe un correo más largo</string>
+    <string name="escribe_mail_corto">Escribe un Correo mas Corto</string>
+    <string name="escribe_pass_largo">Escribe una Contraseña mas larga</string>
+    <string name="escribe_pass_corto">Escribe una contraseña mas corta</string>
+    <string name="escribe_pass_digit">Por tu seguridad la contraseña debe tener al menos un Digito</string>
+    <string name="escribe_pass_upper">Por tu seguridad la contraseña debe tener al menos una mayuscula</string>
+    <string name="escribe_pass_special">Por tu seguridad la contraseña debe tener al menos un caracter especial</string>
+    <string name="escribe_name_largo">Tu nombre debe ser mas largo</string>
+    <string name="escribe_name_corto">El nombre ingresado es muy largo</string>
+    <string name="modelo">Modelo</string>
+    <string name="no_item_found">No se encontro ningun item dentro de esta categoria.</string>
+    <string name="observacion">Observación</string>
+    <string name="no_hay_observe">No hay observaciones</string>
+    <string name="Categoria">Categoria</string>
+    <string name="change_ip_default">Cambiar la direccion ip</string>
+    <string name="create_device">Crear Nuevo Equipo</string>
+    <string name="please_load">Por favor cargue una foto del dispositivo</string>
+    <string name="imagen_de_dispos">Imagen del dispositivo</string>
+    <string name="login_band">Ingresar Marca</string>
+    <string name="in_model">Ingresar Modelo</string>
+    <string name="in_descripcion">Ingresar Especificaciones</string>
+    <string name="in_observation">Ingresar Observacion</string>
+    <string name="in_State">Ingresar Estado</string>
+    <string name="in_Category">Ingresar Categoria</string>
+    <string name="titleDeviceEdit">Editar Dispositivo</string>
+    <string name="specification">Especificaciones</string>
+    <string name="no_hay_spefication">No Hay Especificaciones</string>
+    <string name="Atras">Atrás</string>
+    <string name="escribe_text_corto">Escribe algo más largo</string>
+    <string name="escribe_text_largo">Escribe algo más corto</string>
+    <string name="editar_especificaciones">Editar Especificaciones</string>
+    <string name="editar_Observacion">Editar Observacion</string>
+    <string name="editar">Editar</string>
+</resources>

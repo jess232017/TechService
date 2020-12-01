@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/contentCardColor"
+    android:orientation="vertical"
+    android:layout_height="153dp"
+    android:layout_width="200dp"
+    android:id="@+id/cardView">
+
+    <LinearLayout
+        android:background="@drawable/btn_corner5"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/blackTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Card title"/>
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:textColor="@color/blackTextColor"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            tools:text="Lorem ipsum dolor s." />
+
+        <Button
+            android:id="@+id/idButton"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:layout_marginTop="15dp"
+            tools:text="Button"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_bookmark"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
